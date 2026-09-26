@@ -1,0 +1,319 @@
+.confirmation-page-wrapper {
+  max-width: 680px;
+  margin: 40px auto 100px;
+  padding: 0 20px;
+}
+
+.confirmation-card {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-xl);
+  padding: 40px 30px;
+  text-align: center;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+}
+
+/* Celebration Badge */
+.celebration-badge-outer {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background-color: var(--success-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+  animation: popIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.celebration-badge-inner {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: var(--success);
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(27, 136, 61, 0.35);
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.6); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.confirmation-headline {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  letter-spacing: -0.3px;
+}
+
+.confirmation-subtext {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 22px;
+}
+
+/* Order ID Pill */
+.order-number-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--bg-subtle);
+  border: 1px dashed var(--border-color);
+  padding: 8px 18px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  margin-bottom: 24px;
+  transition: all 0.2s ease;
+}
+
+.order-number-pill:hover {
+  border-color: var(--primary);
+  background-color: var(--primary-light);
+}
+
+.order-tag-label {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.order-tag-code {
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.copy-hint {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* ETA Banner */
+.eta-delivery-banner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background-color: #f7fbf8;
+  border: 1px solid #c8e6c9;
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  text-align: left;
+  margin-bottom: 26px;
+}
+
+.eta-icon {
+  font-size: 30px;
+}
+
+.eta-text strong {
+  display: block;
+  font-size: 15px;
+  color: var(--success);
+  margin-bottom: 2px;
+}
+
+.eta-text p {
+  margin: 0;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* Details Grid */
+.order-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.order-detail-card {
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 18px;
+}
+
+.order-detail-card h4 {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.detail-person {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.detail-address, .detail-phone {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+.detail-note {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-top: 6px;
+}
+
+.ordered-dishes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.ordered-dish-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.dish-price {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.detail-divider {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 8px 0;
+}
+
+.total-row-highlight {
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+/* Action CTAs */
+.confirmation-buttons-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.track-order-cta {
+  display: block;
+  background-color: var(--primary);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 14px;
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 14px rgba(226, 55, 68, 0.28);
+  transition: all 0.2s ease;
+}
+
+.track-order-cta:hover {
+  background-color: var(--primary-hover);
+}
+
+.home-action-btn {
+  display: block;
+  background-color: var(--bg-subtle);
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 12px;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid var(--border-color);
+  transition: all 0.2s ease;
+}
+
+.home-action-btn:hover {
+  background-color: #eee;
+}
+
+.confirmation-cancel-btn {
+  display: block;
+  width: 100%;
+  background-color: #ffffff;
+  color: #dc2626;
+  border: 1.5px solid #fca5a5;
+  padding: 13px;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.confirmation-cancel-btn:hover:not(:disabled) {
+  background-color: #fee2e2;
+  border-color: #ef4444;
+}
+
+.confirmation-cancel-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.confirmation-cancel-error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  font-size: 13px;
+  margin-top: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.cancelled-confirmation-notice {
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: var(--radius-md);
+  padding: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cancelled-pill {
+  display: inline-block;
+  background-color: #dc2626;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 13px;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+}
+
+.cancelled-confirmation-notice p {
+  margin: 4px 0 0 0;
+  font-size: 13px;
+  color: #7f1d1d;
+}
+
+@media (max-width: 600px) {
+  .order-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .confirmation-card {
+    padding: 28px 18px;
+  }
+}

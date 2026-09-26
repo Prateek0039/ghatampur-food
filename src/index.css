@@ -1,0 +1,113 @@
+:root {
+  /* Brand Colors */
+  --primary: #e23744;
+  --primary-hover: #c92532;
+  --primary-light: #fff0f1;
+  --secondary: #fc8019;
+  
+  /* Status & Accent Colors */
+  --success: #1b883d;
+  --success-light: #e8f5e9;
+  --warning: #e65100;
+  --warning-light: #fff3e0;
+  --info: #0288d1;
+  --info-light: #e1f5fe;
+
+  /* Neutral Surface & Background Colors */
+  --bg-page: #f4f6f8;
+  --bg-card: #ffffff;
+  --bg-subtle: #f9fafb;
+  --border-color: #e8ebed;
+  --border-subtle: #f0f2f4;
+
+  /* Typography Colors */
+  --text-primary: #1c1c1c;
+  --text-secondary: #4f5366;
+  --text-muted: #828699;
+  --text-disabled: #b0b4c2;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+  --radius-pill: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
+  --shadow-floating: 0 8px 30px rgba(0, 0, 0, 0.16);
+
+  /* Fonts */
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  font-family: var(--font-family);
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+input, textarea, select {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom Smooth Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-page);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: var(--radius-pill);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

@@ -1,0 +1,145 @@
+.restaurant-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.restaurant-card {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.22s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: #ffdcdb;
+}
+
+.restaurant-image-container {
+  height: 160px;
+  background: linear-gradient(135deg, #fff2f2 0%, #ffeae8 100%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-emoji-visual {
+  font-size: 64px;
+  transition: transform 0.25s ease;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.08));
+}
+
+.restaurant-card:hover .card-emoji-visual {
+  transform: scale(1.12);
+}
+
+.discount-overlay-tag {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: linear-gradient(90deg, #1c1c1c 0%, #333333 100%);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  padding: 4px 9px;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.delivery-time-pill {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(4px);
+  color: var(--text-primary);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-sm);
+}
+
+.restaurant-card-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.restaurant-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rating-pill {
+  background-color: var(--success);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.cuisine-line {
+  color: var(--text-muted);
+  font-size: 13px;
+  margin: 0 0 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+
+.card-meta-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-subtle);
+  font-size: 13px;
+}
+
+.price-tag {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.view-menu-link {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.15s ease;
+}
+
+.restaurant-card:hover .view-menu-link {
+  transform: translateX(3px);
+}
