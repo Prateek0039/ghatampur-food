@@ -3,7 +3,7 @@
  * Uses native Fetch API without external dependencies.
  */
 
-let apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
+let apiBaseUrl = "https://ghatampur-food-api.onrender.com";
 
 /**
  * Generic request helper with automatic JSON parsing, dual-stack loopback retry,
